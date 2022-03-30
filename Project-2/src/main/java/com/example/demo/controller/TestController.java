@@ -1,0 +1,24 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class TestController {
+	
+	@RequestMapping("home")
+	public String home() {
+		System.out.println("started");
+		return "Home";
+	}
+	
+	
+	@RequestMapping("b")
+	public String name1() {
+		System.out.println("started1");
+		return "test1";
+	}
+	
+	
+
+}
